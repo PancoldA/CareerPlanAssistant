@@ -17,5 +17,5 @@ public interface UserRepository extends JpaRepository < User, Long > {
     @Transactional
     @Modifying
     @Query(value = UPDATE_USER, nativeQuery = true)
-    public int updateUser(@Param("userRequestDto") UserRequestDto userRequestDto);
+    int updateUser(@Param("userRequestDto") UserRequestDto userRequestDto);
 }
